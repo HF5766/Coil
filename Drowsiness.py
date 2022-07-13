@@ -199,11 +199,9 @@ while cap.isOpened():
 
         if(totStates != prevStates):
             if isOff:
-                urllib.request.urlopen('https://node.cetus.hs-ruhrwest.de/seat/state?state=true')
                 print("On")
                 isOff = False
             else:
-                urllib.request.urlopen('https://node.cetus.hs-ruhrwest.de/seat/state?state=false')
                 print("Off")
                 isOff = True
 
